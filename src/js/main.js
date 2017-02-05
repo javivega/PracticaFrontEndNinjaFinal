@@ -1,3 +1,4 @@
+window.jQuery = window.$ = require('jquery');
 require('./menu');
 require('./form-val');
 require('./comments-services');

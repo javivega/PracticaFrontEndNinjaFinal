@@ -7,7 +7,7 @@ require('./noframework.waypoints.min');
 $(document).ready(function () {
     
     
-    
+    datesManager.datesLoader();
 
     var waypoint = new Waypoint({
         element: document.getElementById('js--comments-section')
