@@ -23,7 +23,7 @@ $(document).ready(function () {
         , offset: 800
     })
     
-    datesManager.datesLoader();
+
     
     
 });
