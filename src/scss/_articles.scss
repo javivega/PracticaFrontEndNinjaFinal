@@ -1,0 +1,99 @@
+.container {
+    margin: 0 auto;
+    max-width: 1200px;
+    padding: 0px 20px;
+    @include if-is-medium-screen {
+        display: flex;
+        flex-flow: row wrap;
+        align-items: stretch;
+    }
+}
+
+.post {
+    position: relative;
+    font-family: $main-font-family;
+    background-color: white;
+    ;
+    margin-bottom: 22px;
+    box-shadow: $box-shadow-default;
+    @include if-is-medium-screen {
+        margin: 0 20px 30px 20px;
+        flex: 1 0 28%;
+    }
+    .post-img {
+        width: 100%;
+        height: auto;
+    }
+    .post-content {
+        padding: 8px 30px;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        .post-title {
+            font-size: $font-size-h1;
+            font-family: $titles-font-family;
+            color: lighten($terciary-color, 20%);
+            margin: 14px;
+        }
+        .post-text {
+            text-align: justify;
+            @include format-text;
+            .texto-oculto {
+                display: none;
+                &.shown {
+                    display: block;
+                }
+            }
+            .leer-mas {
+                display: inline-block;
+                margin: 12px 0;
+                padding: 6px;
+                background-color: $secondary-color;
+                color: $primary-color;
+                text-decoration: none;
+            }
+        }
+        .post-detail {
+            margin-top: 16px;
+        }
+    }
+}
+
+.social-content {
+    position: absolute;
+    right: 10px;
+    bottom: 6px;
+    a {
+        text-decoration: none;
+        color: $secondary-color;
+        padding: 0.8em;
+        i.fa-comment {
+            align-self: flex-end;
+            padding-right: 6px;
+        }
+        i.red {
+            color: indianred;
+        }
+    }
+    .like-btn {
+        diplay: block;
+        
+    }
+    .unlike-btn {
+        display: none;
+    }
+    
+    &.bookmarked {
+        .like-btn {
+            display: none;
+            
+        }
+        .unlike-btn {
+            display: block;
+        }
+    }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+}

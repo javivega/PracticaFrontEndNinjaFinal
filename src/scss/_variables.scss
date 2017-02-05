@@ -1,0 +1,47 @@
+//fonts
+
+$main-font-family: 'Raleway', sans-serif;
+$titles-font-family: 'Montserrat', sans-serif;
+$header-font-family: 'Just Another Hand', cursive;
+
+
+// font sizes
+$font-size-base: 16px;
+$font-size-small: $font-size-base - 6px;
+$font-size-large: $font-size-base + 12px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+$font-size-h6: $font-size-base;
+
+
+
+
+//colors
+
+$primary-color: #F7F7F7;
+$secondary-color: #292929;
+$terciary-color: #2E2E2D;
+$main-text-color: $terciary-color;
+$body-background-color: $primary-color;
+
+//border radius, box-shadow
+$border-radius-default: 5px;
+$box-shadow-default: 0px 1px 5px 2px rgba(0,0,0,0.2);
+
+//media queries breakpoints
+
+$large-screen-width: 1024px;
+$medium-screen-width: 768px;
+$small-screen-width: $medium-screen-width -1;
+
+//margins, spacings, paddings
+
+$line-heigth-default: 1.2;
+$default-letter-spacing: 1.2;
+
+
+
+

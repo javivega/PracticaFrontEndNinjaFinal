@@ -1,0 +1,72 @@
+#js--comments-section {
+    display: none;
+    &.comment-shown{
+        display: block;
+        margin: 0;
+        padding: 0;
+        @include if-is-medium-screen {
+            margin: 0 auto;
+        }
+    }
+}
+.comments-section {
+    width: 100%;
+    .comments {
+        div[class^="ui-"] {
+            display: none;
+        }
+        &.ideal .ui-ideal {
+            display: block;
+        }
+        &.error .ui-error {
+            display: block;
+        }
+        &.blank .ui-blank {
+            display: block;
+        }
+        &.loading .ui-loading {
+            display: block;
+        }
+    }
+    .comments {
+        width: 100%;
+        &.ideal {
+            .ui-ideal {
+                .comment-box {
+                    box-sizing: border-box;
+                    background-color: $secondary-color;
+                    color: $primary-color;
+                    width: 60%;
+                    margin: 20px auto;
+                     padding: 20px;
+                    font-family: $main-font-family;
+                    @include format-text;
+                    @include if-is-medium-screen {
+                        max-width: 60%;
+
+                    }
+                    .autor-line {
+                        .autor-name {
+                            color: #76daff;
+                        }
+                    }
+                    .separator {
+                        height: 1px;
+                        background-color: lighten($secondary-color, 30%);
+                        width: 80%;
+                        margin: 8px auto;
+                    }
+                }
+            }
+        }
+        &.error {
+            @include comments-style (indianred);
+        }
+        &.blank {
+            @include comments-style (cadetblue);
+        }
+        &.loading {
+            @include comments-style (forestgreen);
+        }
+    }
+}

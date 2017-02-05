@@ -1,0 +1,55 @@
+
+.comments-section {
+    .comments-form {
+        width: 100%;
+        margin: 0 auto;
+
+        text-align: center;
+
+        @include if-is-medium-screen {
+                   width: 80%;
+                }
+
+        .form-row {
+            width: 100%;
+            margin-bottom: 14px;
+
+            span {
+                display: none;
+                width: 100%;
+                color: #b2201e;
+                font-family: $main-font-family;
+                margin-top: 8px;
+            }
+
+            #form-submit {
+                @include button-style($secondary-color, $primary-color, 0);
+                position: static;
+                transform: translate(0);
+            }
+
+
+        }
+
+        input, textarea {
+            width: 40%;
+            font-family: $main-font-family;
+            background-color: $primary-color;
+            color: $secondary-color;
+            padding: 14px;
+            border: 1px solid lighten($secondary-color, 30%);
+            font-size: $font-size-base;
+            resize: none;
+            border-radius: $border-radius-default;
+            box-shadow: $box-shadow-default;
+
+            &:focus {
+                outline: none;
+                border: 1px solid lighten($secondary-color, 30%);;
+            }
+
+
+        }
+
+    }
+}

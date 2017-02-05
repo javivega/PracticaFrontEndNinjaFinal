@@ -1,0 +1,75 @@
+//utils
+@mixin menu-lines {
+    background-color: white;
+    border-radius: 1px;
+    height: 2px;
+    width: 100%;
+    position: absolute;
+    left: 50%;
+}
+
+@mixin format-text {
+    line-height: $line-heigth-default + 0.2;
+}
+
+//botones
+@mixin button-style ($bcg-color, $color, $pos-bottom) {
+    position: absolute;
+    bottom: $pos-bottom;
+    left: 50%;
+    transform: translateX(-50%);
+    border: none;
+    color: $color;
+    background-color: $bcg-color;
+    font-family: $main-font-family;
+    font-size: $font-size-base;
+    border-radius: 3em;
+    border: 1px solid $secondary-color;
+    height: 35px;
+    line-height: 35px;
+    text-transform: capitalize;
+    transition: all 0.3s;
+    padding: 0 20px;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten($secondary-color, 50%);
+        color: white;
+    }
+    @include if-is-medium-screen {
+        align-self: center;
+        transform: translateX(0);
+        position: static;
+    }
+}
+
+@mixin comments-style ($bgColor) {
+    background-color: $bgColor;
+    color: $primary-color;
+    max-width: 60%;
+    margin: 20px auto;
+    padding: 20px;
+    font-family: $main-font-family;
+    @include format-text;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+//media queries
+@mixin if-is-large-screen {
+    @media all and (min-width: #{$large-screen-width}) {
+        @content;
+    }
+}
+
+@mixin if-is-medium-screen {
+    @media all and (min-width: #{$medium-screen-width}) {
+        @content;
+    }
+}
+
+@mixin if-is-small-screen {
+    @media all and (max-width: #{$small-screen-width}) {
+        @content;
+    }
+}

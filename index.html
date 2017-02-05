@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Mike Articles</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0">
+    <link rel="stylesheet" href="src/reset.css">
+    <link rel="stylesheet" href="dist/style.css"> </head>
+
+<body>
+    <div class="wrap js-inicio">
+        <header class="logo">
+            <h1 class="logo-title">
+                <a href="#" class="logo-link">Mike Articles</a>
+            </h1> </header>
+        <a class="btn-menu"> <span class="lines"></span> </a>
+    </div>
+    <nav class="navbar">
+        <ul class="navbar-list">
+            <li class="navbar-item"><a href="#" class="navbar-link">Todo</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">Cultura</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">Sociedad</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">Deportes</a></li>
+            <li class="navbar-item"><a href="#" class="navbar-link">Ciencia</a></li>
+        </ul>
+        <form role="search" method="get" id="searchform">
+            <label for="search-input"><i class="fa fa-search" aria-hidden="true"></i></label>
+            <input type="text" placeholder="Buscar..." id="search-input"> </form>
+        <button class="login-button">Login</button>
+        <button class="register-button">Registrate</button>
+    </nav>
+    <header class="web-header">
+        <h1 class="web-header-title">Mike Articles</h1>
+        <h2 class="web-header-subtitle">Web de artículos Keepcoding</h2> </header>
+    <section>
+        <div class="articles-section container">
+            <article class="post" data-id="1">
+                <picture>
+                    <source srcset="/dist/img/art-01-175px.jpg 175w, /dist/img/art-01-350px.jpg 350w, /dist/img/art-01-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-01-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-01-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-01-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-profile-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-profile-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="2">
+                <picture>
+                    <source srcset="/dist/img/art-02-175px.jpg 175w, /dist/img/art-02-350px.jpg 350w, /dist/img/art-02-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-02-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-02-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-02-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-profile-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-profile-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="3">
+                <picture>
+                    <source srcset="/dist/img/art-03-175px.jpg 175w, /dist/img/art-03-350px.jpg 350w, /dist/img/art-03-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-03-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-03-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-03-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-profile-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-profile-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="4">
+                <picture>
+                    <source srcset="/dist/img/art-04-175px.jpg 175w, /dist/img/art-04-350px.jpg 350w, /dist/img/art-04-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-04-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-04-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-04-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-placeholder-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-placeholder-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="5">
+                <picture>
+                    <source srcset="/dist/img/art-05-175px.jpg 175w, /dist/img/art-05-350px.jpg 350w, /dist/img/art-05-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-05-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-05-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-05-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-placeholder-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-placeholder-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="6">
+                <picture>
+                    <source srcset="/dist/img/art-06-175px.jpg 175w, /dist/img/art-06-350px.jpg 350w, /dist/img/art-06-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-06-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-06-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-06-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-profile-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-profile-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="7">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/9mNDy6SkCbo" frameborder="0" allowfullscreen></iframe>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-profile-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-profile-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="8">
+                <picture>
+                    <source srcset="/dist/img/art-08-175px.jpg 175w, /dist/img/art-08-350px.jpg 350w, /dist/img/art-08-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-08-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-08-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-08-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-profile-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-profile-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="9">
+                <picture>
+                    <source srcset="/dist/img/art-09-175px.jpg 175w, /dist/img/art-09-350px.jpg 350w, /dist/img/art-09-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-09-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-09-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-09-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-profile-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-profile-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+            <article class="post" data-id="10">
+               <picture>
+                    <source srcset="/dist/img/art-06-175px.jpg 175w, /dist/img/art-06-350px.jpg 350w, /dist/img/art-06-700px.jpg 700w" media="(max-width: 767px)">
+                    <source srcset="/dist/img/art-06-700px.jpg 700w" media="(min-width: 768px) and (max-width: 1023px)">
+                    <source srcset="/dist/img/art-06-350px.jpg 350w" media="(min-width: 1024px)"> <img class="post-img" src="/dist/img/art-06-700px.jpg" alt="post-img1" /> </picture>
+                <div class="post-content">
+                    <div class="post-detail">
+                        <div class="post-content-detail">
+                            <div class="post-autor">
+                                <picture>
+                                    <source srcset="/dist/img/user-profile-50px.jpg 50w" media="(min-width: 767px)" <source srcset="/dist/img/user-profile-180px.jpg 180w" media="(min-width: 768px) and (max-width: 1024px)"> <img src="/dist/img/user-profile-180px.jpg" alt="" class="post-autor-img"> </picture>
+                                <p class="post-autor-name">Miguel Angel Arribas</p>
+                            </div>
+                        </div>
+                    </div>
+                    <h1 class="post-title">Titular 1</h1>
+                    <p class="post-text"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellat deserunt exercitationem asperiores provident hic consequuntur dolor quasi. Lorem ipsum dolor sit amet, consectetur adipisicing elit. </br><a href="#" class="leer-mas">Seguir leyendo...</a> <span class="texto-oculto">
+                            Possimus modi et voluptates dicta, iure distinctio eius accusantium magnam, voluptate aut sequi velit officiis ipsa ipsam, vero quo placeat. Rerum, architecto! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Blanditiis accusantium architecto voluptates quam eligendi, ut itaque sit voluptas assumenda autem doloribus harum expedita quae quaerat nam! Ad doloremque veritatis dignissimos.
+                        </span> </p>
+                    <time class="post-date" datetime="2017-01-20 23:12:00">20 de Enero de 2017</time>
+                    <div class="post-detail"> <a href="details.html" class="post-detail-link">Detalles</a> </div>
+                </div>
+                <div class="social-content"> <a href="#" class="like-btn"><i class="fa fa-heart" aria-hidden="true"></i></a> <a href="#" class="unlike-btn"><i class="fa fa-heart red" aria-hidden="true"></i></a> <a href="details.html#js--comments-section"><i class="fa fa-comment" aria-hidden="true"></i>3</a> </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <h1>Mike articles</h1>
+        <h2>Blog de actualiad</h2> <a class="js-scroll-to-start" href="">Volver arriba</a> </footer>
+    <script src="dist/main.js"></script>
+</body>
+
+</html>
