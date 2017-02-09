@@ -22,6 +22,13 @@
                 border-radius: 8em;
             }
         }
+        .post-autor-img {
+            width: 8%;
+            margin: 0.5em;
+            .post-autor-img {
+                height: auto;
+                border-radius: 8em;
+        }
     }
     .post-img-detail {
         margin: 0 auto;
@@ -53,4 +60,5 @@
             @include if-is-medium-screen {}
         }
     }
+}
 }
